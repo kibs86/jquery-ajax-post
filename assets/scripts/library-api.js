@@ -17,16 +17,7 @@ const show = function (bookId) {
   });
 };
 
-const create = function (form) {
-  return $.ajax({
-    url: app.host + '/books/',
-    method: 'POST',
-    data: getFormFields(form),
-  });
-};
-
 module.exports = {
   index,
   show,
-  create,
 };

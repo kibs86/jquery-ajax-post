@@ -20,14 +20,7 @@ const onGetBooks = function (event) {
   }
 };
 
-const onCreateBook = function (event) {
-  event.preventDefault();
-  libraryApi.create(event.target)
-    .done(ui.onSuccess)
-    .fail(ui.onError);
-};
 
 module.exports = {
-  onGetBooks,
-  onCreateBook
+  onGetBooks
 };
