@@ -45,8 +45,18 @@ const onUpdateBook = function(event){
     .catch(booksUi.onError);
 };
 
+const onCreateBook = function(event){
+  event.preventDefault();
+
+  let data = getFormFields(event.target);
+  booksApi.create(data)
+    .then(booksUi.onCreateSuccess)
+    .catch(booksUi.onError);
+};
+
 module.exports = {
   onGetBooks,
   onDeleteBook,
   onUpdateBook,
+  onCreateBook
 };

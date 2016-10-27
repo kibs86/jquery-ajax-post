@@ -20,9 +20,14 @@ const onUpdateSuccess = function () {
   console.log('Book was successfully Updated.');
 };
 
+const onCreateSuccess = function (data) {
+  console.log(data.book);
+};
+
 module.exports = {
   onSuccess,
   onError,
   onDeleteSuccess,
   onUpdateSuccess,
+  onCreateSuccess
 };
