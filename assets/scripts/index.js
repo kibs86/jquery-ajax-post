@@ -12,5 +12,6 @@ const bookEvents = require('./books/events');
 $(() => {
   $('.books').on('submit', bookEvents.onGetBooks)
   $('.delete-book').on('submit', bookEvents.onDeleteBook)
-  $('.update-book').on('submit', bookEvents.onUpdateBook);
+  $('.update-book').on('submit', bookEvents.onUpdateBook)
+  $('.create-book').on('submit', bookEvents.onCreateBook)
 });

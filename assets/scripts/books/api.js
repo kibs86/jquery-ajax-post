@@ -31,9 +31,18 @@ const update = function(data){
   });
 };
 
+const create = function(data){
+  return $.ajax({
+    url: app.host + '/books',
+    method: 'POST',
+    data,
+  });
+};
+
 module.exports = {
   index,
   show,
   destroy,
   update,
+  create,
 };
