@@ -3,6 +3,7 @@
 const onSuccess = function (data) {
   if (data.book) {
     console.log(data.book);
+    $('#book-content').append(`<br> ${data.book.title}`);
   } else {
     console.table(data.books);
   }
