@@ -33,17 +33,17 @@ We're now ready to make requests.
 
 ### Curl single book demonstration
 
-We'll use curl to add a book. Watch as I add a script to my `curl/post.sh` file
+We'll use curl to add a book. Watch as I add a script to my `scripts/books/post.sh` file
 and run it in my terminal.
 
 ### Curl single book code along
 
-We'll use curl to add a book. Code along as I add a script to my `curl/post.sh`
+We'll use curl to add a book. Code along as I add a script to my `scripts/books/post.sh`
 file and run it in my terminal.
 
 ### Curl single book lab
 
-Now write your own curl script in `curl/post.sh`.  Add a few books.
+Now write your own curl script in `scripts/books/post.sh`.  Add a few books.
 
 ### AJAX single book demo and lab
 
